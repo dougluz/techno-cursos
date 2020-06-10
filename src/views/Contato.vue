@@ -4,7 +4,7 @@
       <p>Carregando</p>
     </div>
     <div class="" v-if="api">
-      <h1>Home</h1>
+      <h1>Contato</h1>
       <p>{{ api }}</p>
     </div>
   </div>
@@ -17,7 +17,7 @@ export default {
   name: 'Home',
   mixins: [fetchData],
   created() {
-    this.fetchData('/home')
+    this.fetchData('/contato')
   }
 };
 </script>
