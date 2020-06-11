@@ -13,7 +13,7 @@ export default {
           setTimeout(() => {
             this.api = r
             this.loading = false
-          }, 1500)
+          }, 1000)
         })
     }
   }

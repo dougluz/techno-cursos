@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="" v-if="loading">
+    <div class="centralizado" v-if="loading">
       <PageLoading />
     </div>
     <transition>

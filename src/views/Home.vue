@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="" v-if="loading">
+    <div class="centralizado" v-if="loading">
       <PageLoading />
     </div>
     <transition>
@@ -13,7 +13,7 @@
             <h2>Avaliações</h2>
             <ul>
               <li v-for="avaliacao in api.avaliacoes" :key="avaliacao.nome">
-                <p>{{avaliacao.nome}}</p>
+                <p><b>{{avaliacao.nome}}</b></p>
                 <p>{{avaliacao.descricao}}</p>
               </li>
             </ul>

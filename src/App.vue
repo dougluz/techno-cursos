@@ -62,6 +62,13 @@ export default {
     grid-gap: 30px;
   }
 
+  .centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+  }
+
   @media screen and (max-width: 400px) {
     .conteudo {
       display: block;
