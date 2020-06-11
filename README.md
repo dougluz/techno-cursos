@@ -14,6 +14,8 @@ This project was developed during a class about Vue.js that i was taking in <a h
 
 ### Run the app ⚙
 
+###### You gonna need NPM and Node.js to run this application.
+
 First, you need to clone this repo, in your Terminal type:
 
 ```git
