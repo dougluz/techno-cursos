@@ -1,12 +1,20 @@
 <template>
   <div>
-    <div class="" v-if="loading">
+    <div class="centralizado" v-if="loading">
       <PageLoading />
     </div>
     <transition>
-      <div class="" v-if="api">
-        <h1>Cursos</h1>
-        <p>{{ api }}</p>
+      <div class="conteudo" v-if="api">
+        <div>
+          <h1>{{api.titulo}}</h1>
+          <p>{{api.descricao}}</p>
+        </div>
+        <ul class="cursos-lista">
+          <li v-for="curso in api.cursos" :key="curso.id">
+            <router-link :to="{name: 'curso', params: { curso: curso.id }}"><h2>{{curso.nome}} - {{curso.totalAulas}} aulas | {{curso.horas}} horas</h2></router-link>
+            <p>{{curso.descricao}}</p>
+          </li>
+        </ul>
       </div>
     </transition>
   </div>
@@ -23,3 +31,9 @@ export default {
   }
 };
 </script>
+
+<style>
+.cursos-lista li {
+  margin-bottom: 40px;
+}
+</style>
