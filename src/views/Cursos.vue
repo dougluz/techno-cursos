@@ -36,4 +36,7 @@ export default {
 .cursos-lista li {
   margin-bottom: 40px;
 }
+.cursos-lista a {
+  cursor: pointer;
+}
 </style>
